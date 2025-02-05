@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+:root{
+    --heading-color : white; 
+}
+
+html , body{
+    height:100%;
+    width:100%;
+    overflow:none;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    background-image: linear-gradient( 85.2deg,  rgba(33,3,40,1) 7.5%, rgba(65,5,72,1) 88.7% );
+}
+
+
+
+.container{
+    margin: 12%;
+    width: 90%;
+    max-width:700px;
+    color:var(--heading-color);
+
+}
+
+.field{
+    width:70%;
+    margin: 50px 0px 30px 0px;
+    background-color:#fff;
+    color:#333;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:25px 20px;
+    border-radius:10px;
+
+}
+
+.field > input{
+    border : 0;
+    background-color: rgb(255, 255, 255);
+    font-size: 30px;
+    outline:none;
+}
+
+.container > h1{
+    font-weight: 600;
+}
+
+.container > h1 > span{
+    border-bottom : 4px solid rgb(255, 222, 245);
+    color:rgb(196, 0, 235);
+    padding:12px 0px;
+    
+}
+
+.fa-copy{
+    font-size: 30px;
+    cursor:pointer;
+
+}
+
+.generate-btn{
+    height:50px;
+    width:180px;
+    border-style: none;
+    border-radius: 10px;
+    outline : none;
+    font-size:22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:16px 25px;
+    cursor:pointer;
+    background-color: rgb(196, 0, 235);
+    font-weight:500;
+    color:rgb(247, 233, 243);
+}
+
+
+.generate-btn > img{
+    width:30px;
+    margin-right:5px;
+}
+
+@media(max-width:660px){
+
+    .container{
+        margin: 12%;
+        width: 90%;
+        max-width:500px;
+    }
+
+    .field{
+        width:70%;
+        height:50px;
+    
+    }
+
+    .field > input{
+
+        font-size: 20px;
+        
+    }
+}
+
+@media(max-width : 460px){
+    .field > input{
+
+        font-size: 16px;
+        
+    }
+
+    .fa-copy{
+            font-size: 20px;
+}
+}
+
+@media(max-width : 400px){
+
+    h1{
+        font-size:26px;
+    }
+
+
+    .field > input{
+
+        font-size: 12px;
+        
+    }
+
+    .fa-copy{
+            font-size: 20px;
+}
+
+.generate-btn{
+    height:40px;
+    width:120px;
+    font-size: 15px;
+    padding:3px 5px;
+}
+
+.generate-btn > img{
+    width:29px;
+    margin-right:3px;
+}
+}
+
+
+
+
